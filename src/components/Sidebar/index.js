@@ -8,6 +8,7 @@ import {
   faBars,
   faClose,
   faEnvelope,
+  faGear,
   faHome,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +28,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="nav-bar">
-        <Link className="logo" to="/" onClick={handleNav}>
+        <Link className="logo" to="/" onClick={handleNavClose}>
           <img src={LogoS} alt="logo" className="src" />
           <img src={LogoSub} alt="Himanshu" className="sub-logo" />
         </Link>
@@ -39,6 +40,15 @@ const Sidebar = () => {
             to="/"
           >
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            className="skills-link"
+            onClick={handleNavClose}
+            to="/skills"
+          >
+            <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
           </NavLink>
           <NavLink
             exact="true"

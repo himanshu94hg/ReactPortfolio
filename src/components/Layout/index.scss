@@ -40,7 +40,7 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.skills {
   
     h1 {
       font-size: 53px;
@@ -133,6 +133,7 @@
 
     &.contact-page,
     &.about-page,
+    &.skills,
     &.portfolio-page {
       .text-zone {
         position: initial;

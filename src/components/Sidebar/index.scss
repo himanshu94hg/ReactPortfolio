@@ -71,13 +71,20 @@
         transition: all 0.3s ease-out;
       }
 
+      @media (min-width:1061px) {
+        
       &:first-child {
         &:after {
           content: 'HOME';
         }
+      }}
+    }
+    @media (min-width:1061px) {
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
       }
     }
-
     a.about-link {
       &:after {
         content: 'ABOUT';
@@ -90,10 +97,6 @@
       }
     }
 
-    a.portfolio-link {
-      &:after {
-        content: 'PORTFOLIO';
-      }
     }
 
     a.active {
